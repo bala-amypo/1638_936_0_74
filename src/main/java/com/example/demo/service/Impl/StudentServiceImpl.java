@@ -6,6 +6,11 @@ import com.example.demo.service.StudentService;
 public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
 
+    //save()
+    //findall()
+    //findByeId()
+    //deleteById()
+    //existsById()
     
     public StudentEntity postData(StudentEntity stu);
 }
