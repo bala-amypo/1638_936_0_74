@@ -7,5 +7,11 @@ public class StudentEntity(){
     private String password;
     private String email;
     private Date created;
-    public void 
+    public int setId(int id){
+        return setId;
+    }
+    public void Ge
+    public String name(){
+        return name;
+    }
 }
