@@ -1,6 +1,7 @@
 package com.example.demo.service.Impl;
-import org.springframework.stereotype.Service;
+import org.springframeworks.stereotype.Service;
 import com.example.demo.service.StudentService;
+import org.springframework
 
 @Service
 public class StudentServiceImpl implements StudentService{
@@ -12,5 +13,7 @@ public class StudentServiceImpl implements StudentService{
     //deleteById()
     //existsById()
     
-    public StudentEntity postData(StudentEntity stu);
+    public StudentEntity postData(StudentEntity stu){
+        return student.save(stu);
+    }
 }
