@@ -24,24 +24,17 @@ public class ValidationEntity{
     private String password;          
     @Max(30)     
     @Positive  
-    private int age;
-     public Integer getId(){
+     public long getId(){
         return id;
     }
     public void setId(Integer id){
        this.id=id;
     }
-   public String getName(){
-    return name;
+   public String getUsername(){
+    return username;
    }
-   public void setName(String name){
-    this.name=name;
-   }
-    public String getPassword(){
-    return password;
-   }
-   public void setPassword(String password){
-    this.password=password;
+   public void setUsername(String name){
+    this.name=username;
    }
     public String getEmail(){
     return email;
@@ -49,10 +42,26 @@ public class ValidationEntity{
    public void setEmail(String email){
     this.email=email;
    }
-    public Date getCreated(){
-    return created;
+    public String getPassword(){
+    return password;
    }
-   public void setCreated(Date created){
-    this.created=created;
+   public void setPassword(String password){
+    this.password=password;
+   }
+    public int getAge(){
+    return age;
+   }
+   public void setAge(int age){
+    this.age=age;
+   }
+ public StudentEntity(Long id, 
+ String name, String password , String email , Date created){
+           this.id=id;
+           this.username=username;
+           this.email=email;
+           this.password=password;
+           this.age=age;
+   }
+   public StudentEntity(){
    }
     }
