@@ -17,6 +17,6 @@ public class StudentController{
     @Autowired ValidationService vser;
 @PostMapping("/postt")
 public ValidationEntity dopost(@RequestBody ValidationEntity val){
-    return ser.postdataa(val);
+    return vser.postdataa(val);
 }
 }
