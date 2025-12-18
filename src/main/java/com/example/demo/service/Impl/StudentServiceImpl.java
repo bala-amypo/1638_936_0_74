@@ -5,6 +5,8 @@ import  com.example.demo.entity.StudentEntity;
 import  com.example.demo.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
+
+
 @Service
 public class StudentServiceImpl implements StudentService{
       @Autowired StudentRepository student;
@@ -16,5 +18,9 @@ public class StudentServiceImpl implements StudentService{
       @Override
  public StudentEntity postdata(StudentEntity stu){
     return student.save(stu);
+ }
+ @Override
+ public List<StudentEntity> getAllData(){
+      return student.findAll()stu;
  }
 }
