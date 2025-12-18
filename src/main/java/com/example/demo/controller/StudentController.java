@@ -33,6 +33,6 @@ public StudentEntity getdataid(@PathVariable int id){
 }
 @PutMapping ("/put/{id}")
 public StudentEntity putval(@PathVariable int id, @RequestBody StudentEntity entity){
- return ser.
+ return ser.updatData(id);
 }
 }
