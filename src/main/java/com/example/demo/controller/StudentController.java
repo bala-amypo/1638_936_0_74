@@ -26,3 +26,4 @@ public List<StudentEntity>getval(){
 public String deleteval(@PathVariable int id){
     return ser.deleteData(id); 
 }
+}
