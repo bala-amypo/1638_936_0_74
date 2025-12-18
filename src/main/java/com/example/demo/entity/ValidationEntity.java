@@ -23,7 +23,8 @@ public class ValidationEntity{
     @NotNull(message="Password is mandatory")
     private String password;          
     @Max(30)     
-    @Positive  
+    @Positive (message="Age must be a positive number")
+    private int age; 
      public long getId(){
         return id;
     }
@@ -55,7 +56,10 @@ public class ValidationEntity{
     this.age=age;
    }
  public StudentEntity(Long id, 
- String name, String password , String email , Date created){
+ @NotNull @Size(min=2, max=10 , message="must be 2 to 10 characters") String username,
+ @Email(message="Email is not valid")String email ,
+ @Size(min=2, max=10 , message="must be 2 to 10 characters") @NotNull(message="Password is mandatory")String password , 
+ @Max(30) @Positive(message="Age must be a positive number") int age){
            this.id=id;
            this.username=username;
            this.email=email;
