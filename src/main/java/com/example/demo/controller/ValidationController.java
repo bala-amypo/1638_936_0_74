@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
 import java.util.List;
+import jakarta.validation.Valid
 
 
 @RestController
