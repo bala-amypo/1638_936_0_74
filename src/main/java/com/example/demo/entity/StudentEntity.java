@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 @Entity
-public class Studententity{
+public class StudentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
@@ -43,13 +43,13 @@ public class Studententity{
    public void setCreated(Date created){
     this.created=created;
    }
-   public Studententity(Integer id, String name, String password , String email , Date created){
+   public StudentEntity(Integer id, String name, String password , String email , Date created){
            this.id=id;
            this.name=name;
            this.password=password;
            this.email=email;
            this.created=created;
    }
-   public Studententity(){
+   public StudentEntity(){
    }
 }
