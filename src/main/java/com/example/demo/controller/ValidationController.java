@@ -16,7 +16,7 @@ import java.util.List;
 public class StudentController{
     @Autowired ValidationService vser;
 @PostMapping("/postt")
-public ValidationEntity dopost(@RequestBody ValidationEntity val){
+public ValidationEntity dopost(@Valid @RequestBody ValidationEntity val){
     return vser.postdataa(val);
 }
 }
