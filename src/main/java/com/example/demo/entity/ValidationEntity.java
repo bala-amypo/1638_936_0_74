@@ -34,7 +34,7 @@ public class ValidationEntity{
    public String getUsername(){
     return username;
    }
-   public void setUsername(String name){
+   public void setUsername(String username){
     this.username=username;
    }
     public String getEmail(){
