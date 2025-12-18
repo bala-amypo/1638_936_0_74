@@ -22,9 +22,12 @@ public StudentEntity dopost(@RequestBody StudentEntity stu){
 public List<StudentEntity>getval(){
     return ser.getAllData();
 }
-@DeleteMapping("/delete{id}")
+@DeleteMapping("/delete/{id}")
 public String deleteval(@PathVariable int id){
     return ser.deleteData(id); 
 }
-
+@GetMapping("/getid/{id}")
+public StudentEntity getdataid(@PathVariable int id){
+   return ser.getData(id);
+}
 }
