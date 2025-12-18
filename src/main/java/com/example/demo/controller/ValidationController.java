@@ -14,7 +14,7 @@ import jakarta.validation.Valid;
 
 
 @RestController
-public class StudentController{
+public class ValidationController{
     @Autowired ValidationService vser;
 @PostMapping("/postt")
 public ValidationEntity dopost(@Valid @RequestBody ValidationEntity val){
