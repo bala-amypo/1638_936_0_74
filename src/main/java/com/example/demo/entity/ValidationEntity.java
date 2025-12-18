@@ -25,7 +25,7 @@ public class ValidationEntity{
     @Max(30)     
     @Positive (message="Age must be a positive number")
     private int age; 
-     public long getId(){
+     public Long getId(){
         return id;
     }
     public void setId(Long id){
