@@ -28,14 +28,14 @@ public class ValidationEntity{
      public long getId(){
         return id;
     }
-    public void setId(Integer id){
+    public void setId(Long id){
        this.id=id;
     }
    public String getUsername(){
     return username;
    }
    public void setUsername(String name){
-    this.name=username;
+    this.username=username;
    }
     public String getEmail(){
     return email;
