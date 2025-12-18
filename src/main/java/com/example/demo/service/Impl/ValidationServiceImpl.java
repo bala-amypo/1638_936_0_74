@@ -9,9 +9,13 @@ import java.util.List;
 @Service
 public class ValidationServiceImpl implements ValidationService{
       @Autowired ValidationRepository student;
-     
-      @Override
- public ValidationEntity postdataa(ValidationEntity val){
-    return student.save(val);
+      //save()
+      //findall()
+      //findById()
+      //deleteById()
+      //existsById()
+ @Override
+ public ValidationEntity postdata(ValidationEntity stuu){
+    return student.save(stuu);
  }
 }
