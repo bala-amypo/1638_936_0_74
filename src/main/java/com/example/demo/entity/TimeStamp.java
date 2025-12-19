@@ -25,11 +25,11 @@ public class TimeStamp{
 public void Oncreate(){
     LocalDateTime now=LocalDateTime.now();
     this.creatat=now;
-    this.updateat=now;
+    this.updatedat=now;
 }
 @PreUpdate
 public void Onupdate(){
     LocalDateTime now=LocalDateTime.now();
-    this.updateat=now;
+    this.updatedat=now;
 }
 }
