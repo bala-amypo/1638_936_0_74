@@ -20,3 +20,4 @@ public class TimeStamp{
     private LocalDateTime createat;
     private LocalDateTime updatedat;
     } 
+    @PrePersist
