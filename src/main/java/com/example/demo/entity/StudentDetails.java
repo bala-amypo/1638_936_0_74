@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student{
+public class StudentDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer regNo;
