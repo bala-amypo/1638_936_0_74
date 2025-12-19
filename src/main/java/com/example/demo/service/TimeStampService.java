@@ -3,7 +3,7 @@ import com.example.demo.entity.TimeStamp;
 import java.util.List;
 public interface TimeStampService{
     TimeStamp postdatta(TimeStamp tim);
-   // List<ValidationEntity>getAllData();
-    TimeStamp findTheData(Long id);
+    List<TimeStamp>findTheData(Long id);
+    //TimeStamp findTheData(Long id);
 }
   

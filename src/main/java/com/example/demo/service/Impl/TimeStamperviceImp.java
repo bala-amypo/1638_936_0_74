@@ -1,25 +1,20 @@
 package com.example.demo.service.Impl;
 import org.springframework.stereotype.Service;
 import com.example.demo.service.TimeStampService;
-import  com.example.demo.entity.StudentEntity;
-import  com.example.demo.repository.StudentRepository;
+import  com.example.demo.entity.TimeStamp;
+import  com.example.demo.repository.TimeStampRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 
 @Service
-public class StudentServiceImpl implements StudentService{
+public class TimeStampServiceImpl implements TimeStampService{
       @Autowired StudentRepository student;
-      //save()
-      //findall()
-      //findById()
-      //deleteById()
-      //existsById()
       @Override
- public StudentEntity postdata(StudentEntity stu){
-    return student.save(stu);
+ public TimeStamp postdatta(TimeStamp tim){
+    return student.save(tim);
  }
  @Override
- public List<StudentEntity> getAllData(){
+ public List<TimeStamp> getAllData(){
       return student.findAll();
  }
