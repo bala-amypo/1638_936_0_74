@@ -13,11 +13,11 @@ import java.util.List;
 
 
 @RestController
-public class StudentController{
+public class TimeStampController{
     @Autowired TimeStampService ser;
 @PostMapping("/posst")
-public TimeStamp dopost(@RequestBody StudentEntity stu){
-    return ser.postdata(stu);
+public TimeStamp dopost(@RequestBody TimeStamp tim){
+    return ser.postdata(tim);
 }
 @GetMapping("/geet")
 public List<StudentEntity>getval(){
