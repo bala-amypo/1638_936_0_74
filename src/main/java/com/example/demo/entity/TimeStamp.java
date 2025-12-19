@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 @Entity
 @Data
 @AllArgsConstructor
