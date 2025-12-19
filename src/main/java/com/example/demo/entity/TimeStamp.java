@@ -26,4 +26,8 @@ public void Oncreate(){
     this.creatat=now;
     this.updateat=now;
 }
+@PreUpdate
+public void Onupdate(){
+    LocalDateTime 
+}
 }
