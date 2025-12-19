@@ -20,7 +20,7 @@ public TimeStamp dopost(@RequestBody TimeStamp tim){
     return ser.postdata(tim);
 }
 @GetMapping("/geet")
-public List<StudentEntity>getval(){
+public List<TimeStamp>getval(){
     return ser.getAllData();
 }
 }
