@@ -20,7 +20,7 @@ public ValidationEntity dopost( @Valid @RequestBody ValidationEntity stuu){
     return ser.postdata(stuu);
 
 }
-@GetMapping("/getid/{id}")
+@GetMapping("/getidd/{id}")
 public StudentEntity getdataidd(@PathVariable int id){
    return ser.findDataa(id);
 }
