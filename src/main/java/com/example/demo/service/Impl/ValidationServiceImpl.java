@@ -20,6 +20,6 @@ public class ValidationServiceImpl implements ValidationService{
  }
  @Override
  public  ValidationEntity findDataa(Long id){
-    return student.findById(id);
+    return student.findById(id).orElseThrow()->new ValidationException("Invalid id"+id);
  }
 }
