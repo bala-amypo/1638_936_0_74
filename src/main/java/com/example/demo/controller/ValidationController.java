@@ -21,7 +21,7 @@ public ValidationEntity dopost( @Valid @RequestBody ValidationEntity stuu){
 
 }
 @GetMapping("/getidd/{id}")
-public ValidationEntity getdataidd(@PathVariable Long id){
+public ValidationEntity getdataidd(@Valid @PathVariable Long id){
    return ser.findDataa(id);
 }
 
