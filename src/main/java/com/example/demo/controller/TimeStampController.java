@@ -14,13 +14,13 @@ import java.util.List;
 
 @RestController
 public class TimeStampController{
-    @Autowired TimeStampService ser;
+    @Autowired TimeStampService service;
 @PostMapping("/posst")
 public TimeStamp dopost(@RequestBody TimeStamp tim){
-    return ser.postdata(tim);
+    return service.postdata(tim);
 }
 @GetMapping("/geet")
 public List<TimeStamp>getval(){
-    return ser.getAllData();
+    return service.getAllData();
 }
 }
