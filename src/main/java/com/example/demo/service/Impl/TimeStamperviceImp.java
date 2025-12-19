@@ -9,12 +9,13 @@ import java.util.List;
 
 @Service
 public class TimeStampServiceImpl implements TimeStampService{
-      @Autowired StudentRepository student;
+      @Autowired TimeStampRepository student;
       @Override
  public TimeStamp postdatta(TimeStamp tim){
     return student.save(tim);
  }
  @Override
- public List<TimeStamp> getAllData(){
+ public List<TimeStamp> findTheData(){
       return student.findAll();
  }
+}
