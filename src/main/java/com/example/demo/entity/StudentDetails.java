@@ -17,4 +17,5 @@ public class StudentDetails{
     private Integer id;
     private String StudentIdCard;
     private int idno;
+    private StudentDetails student;
     } 
