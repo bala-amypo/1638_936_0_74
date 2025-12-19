@@ -3,7 +3,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.demo.entity.TimeStamp;
 @Repository
-public interface TimeStampRepository extends JpaRepository<Timestamp,Long>{
+public interface TimeStampRepository extends JpaRepository<TimeStamp,Long>{
     
 
 }
