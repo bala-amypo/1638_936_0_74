@@ -21,6 +21,6 @@ public TimeStamp dopost(@RequestBody TimeStamp tim){
 }
 @GetMapping("/geet")
 public List<TimeStamp>getval(){
-    return service.getAllData();
+    return service.findTheData();
 }
 }
