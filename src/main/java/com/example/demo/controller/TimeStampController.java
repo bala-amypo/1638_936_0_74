@@ -17,7 +17,7 @@ public class TimeStampController{
     @Autowired TimeStampService service;
 @PostMapping("/posst")
 public TimeStamp dopost(@RequestBody TimeStamp tim){
-    return service.postdata(tim);
+    return service.postdatta(tim);
 }
 @GetMapping("/geet")
 public List<TimeStamp>getval(){
